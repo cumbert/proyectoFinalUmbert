@@ -1,0 +1,94 @@
+.header {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-inline: 10%; 
+
+
+    .logo {
+
+        padding-right: 2rem;        
+        padding-top: 2.0rem;
+        width: 18%;
+        justify-content: center;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    .nav {
+       
+        display: flex;
+        justify-items: center;
+        align-items:  center;
+        text-align: center;
+
+        ul {
+            list-style-type: none;
+            display: inline-block;
+            
+            li {
+                display: inline; 
+                margin: 0 10px;
+    
+                .boton-menu {
+                    background-color: transparent;
+                    border: 0;
+                    cursor: pointer;                  
+                    gap: 1rem;
+                    font-weight: 600;
+                    padding: 1rem;
+                    font-size: .85rem;
+
+                }
+
+                .boton-menu.active {
+                    background-color: black;
+                    color: white;
+                   
+                    
+                }
+    
+            }
+        }        
+
+        
+
+        
+
+    }
+
+     .login_buy {
+
+        display: flex;        
+        align-items: center;
+        padding-right: 2rem;
+        padding-left: 2rem;        
+        width: 22%;
+        
+
+        img {
+            width: 1.8rem;       
+
+        }
+
+        .login {
+            
+
+            p{
+                align-items: center;    
+            }
+         
+        }
+    }
+    
+     .login_buy > div {
+        margin-right: 10px; /* Agregar margen entre los elementos */
+      } 
+
+
+
+
+}
