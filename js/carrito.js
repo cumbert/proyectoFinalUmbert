@@ -10,6 +10,12 @@ const botonVaciar = document.querySelector("#carrito-acciones-vaciar");
 const contenedorTotal = document.querySelector("#total");
 const botonComprar = document.querySelector("#carrito-acciones-comprar");
 
+console.log(contenedorCarritoVacio);
+console.log(contenedorCarritoProductos);
+console.log(contenedorCarritoAcciones);
+console.log(contenedorCarritoComprado);
+
+
 
 
 function cargarProductosCarrito() {
@@ -70,6 +76,8 @@ function cargarProductosCarrito() {
 
 cargarProductosCarrito();
 
+
+
 function actualizarBotonesEliminar() {
     botonesEliminar = document.querySelectorAll(".carrito-producto-eliminar");
 
@@ -106,12 +114,15 @@ function eliminarDelCarrito(e) {
 
     productosEnCarrito.splice(index, 1);
     cargarProductosCarrito();
+    actualizarTotal();
+
 
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 
 }
 
 botonVaciar.addEventListener("click", vaciarCarrito);
+
 function vaciarCarrito() {
 
     Swal.fire({
@@ -126,15 +137,17 @@ function vaciarCarrito() {
         if (result.isConfirmed) {
             productosEnCarrito.length = 0;
             localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
-            cargarProductosCarrito();
-            contenedorCarritoProductos.innerHTML = ""
-        }
-    })
+            // cargarProductosCarrito();            
+            actualizarTotal();
+            contenedorCarritoProductos.innerHTML = "";            
+        }        
+    })    
 }
 
 
 function actualizarTotal() {
-    const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
+
+    const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);    
     total.innerText = `$${totalCalculado}`;
 }
 
@@ -148,8 +161,12 @@ function comprarCarrito() {
     contenedorCarritoProductos.classList.add("disabled");
     contenedorCarritoAcciones.classList.add("disabled");
     contenedorCarritoComprado.classList.remove("disabled");
+    contenedorCarritoProductos.innerHTML = "";
+    actualizarTotal();
 
 }
+
+
 
 
 
