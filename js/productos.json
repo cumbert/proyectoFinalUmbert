@@ -1,0 +1,185 @@
+[
+
+    {
+        "id": "pantalon_01",
+        "titulo": "Pantalón 01",
+        "imagen": "./images/pantalones/pantalon_01.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "pantalon_02",
+        "titulo": "Pantalón 02",
+        "imagen": "./images/pantalones/pantalon_02.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "pantalon_03",
+        "titulo": "Pantalón 03",
+        "imagen": "./images/pantalones/pantalon_03.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "pantalon_04",
+        "titulo": "Pantalón 04",
+        "imagen": "./images/pantalones/pantalon_04.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "pantalon_05",
+        "titulo": "Pantalón 05",
+        "imagen": "./images/pantalones/pantalon_05.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "pantalon_06",
+        "titulo": "Pantalón 06",
+        "imagen": "./images/pantalones/pantalon_06.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "pantalon_07",
+        "titulo": "Pantalón 07",
+        "imagen": "./images/pantalones/pantalon_07.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "pantalon_08",
+        "titulo": "Pantalón 08",
+        "imagen": "./images/pantalones/pantalon_08.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "pantalon_09",
+        "titulo": "Pantalón 09",
+        "imagen": "./images/pantalones/pantalon_09.jpg",
+        "categoria": {
+            "nombre": "Pantalones",
+            "id": "pantalones"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "pollera_01",
+        "titulo": "Pollera 01",
+        "imagen": "./images/polleras/pollera_01.jpg",
+        "categoria": {
+            "nombre": "Polleras",
+            "id": "polleras"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "pollera_02",
+        "titulo": "Pollera 02",
+        "imagen": "./images/polleras/pollera_02.jpg",
+        "categoria": {
+            "nombre": "Polleras",
+            "id": "polleras"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "pollera_03",
+        "titulo": "Pollera 03",
+        "imagen": "./images/polleras/pollera_03.jpg",
+        "categoria": {
+            "nombre": "Polleras",
+            "id": "polleras"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "pollera_04",
+        "titulo": "Pollera 04",
+        "imagen": "./images/polleras/pollera_04.jpg",
+        "categoria": {
+            "nombre": "Polleras",
+            "id": "polleras"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "campera_01",
+        "titulo": "Campera 01",
+        "imagen": "./images/camperas/campera_01.jpg",
+        "categoria": {
+            "nombre": "Camperas",
+            "id": "camperas"
+        },
+        "precio": 10000
+    },
+
+    {
+        "id": "campera_02",
+        "titulo": "Campera 02",
+        "imagen": "./images/camperas/campera_02.jpg",
+        "categoria": {
+            "nombre": "Camperas",
+            "id": "camperas"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "campera_03",
+        "titulo": "Campera 03",
+        "imagen": "./images/camperas/campera_03.jpg",
+        "categoria": {
+            "nombre": "Camperas",
+            "id": "camperas"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "campera_04",
+        "titulo": "Campera 04",
+        "imagen": "./images/camperas/campera_04.jpg",
+        "categoria": {
+            "nombre": "Camperas",
+            "id": "camperas"
+        },
+        "precio": 10000
+    },
+    {
+        "id": "campera_05",
+        "titulo": "Campera 05",
+        "imagen": "./images/camperas/campera_05.jpg",
+        "categoria": {
+            "nombre": "Camperas",
+            "id": "camperas"
+        },
+        "precio": 10000
+    }
+
+]
