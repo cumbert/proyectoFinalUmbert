@@ -10,13 +10,6 @@ const botonVaciar = document.querySelector("#carrito-acciones-vaciar");
 const contenedorTotal = document.querySelector("#total");
 const botonComprar = document.querySelector("#carrito-acciones-comprar");
 
-console.log(contenedorCarritoVacio);
-console.log(contenedorCarritoProductos);
-console.log(contenedorCarritoAcciones);
-console.log(contenedorCarritoComprado);
-
-
-
 
 function cargarProductosCarrito() {
 
@@ -52,8 +45,8 @@ function cargarProductosCarrito() {
                 <small>Subtotal</small>
                 <p>$${producto.precio * producto.cantidad}</p>
             </div>
-            <button class="carrito-producto-eliminar" >
-            <img class="img-carrito-producto-eliminar" src="./images/trash-icon.png" alt="trash-icon">
+            <button class="carrito-producto-eliminar" id="${producto.id}">
+            <img class="img-carrito-producto-eliminar"  src="./images/trash-icon.png" alt="trash-icon">
         </button>
         `;
 
@@ -85,7 +78,7 @@ function actualizarBotonesEliminar() {
         boton.addEventListener("click", eliminarDelCarrito);
     });
 
-
+    
 }
 
 function eliminarDelCarrito(e) {
@@ -109,13 +102,13 @@ function eliminarDelCarrito(e) {
         onClick: function () { } 
     }).showToast();
 
-    const idBoton = e.currentTarget.id;
-    const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);
+    const idBoton = e.currentTarget.id;     
+    const index = productosEnCarrito.findIndex(producto => producto.id === idBoton);        
+    productosEnCarrito.splice(index, 1);   
 
-    productosEnCarrito.splice(index, 1);
+    contenedorCarritoProductos.innerHTML = "";
     cargarProductosCarrito();
     actualizarTotal();
-
 
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 
