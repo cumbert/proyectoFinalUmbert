@@ -1,4 +1,5 @@
 
+
 let productos = [];
 
 fetch("./js/productos.json")
@@ -13,11 +14,6 @@ const botonesCategorias = document.querySelectorAll(".boton-categoria");
 const tituloProducto = document.querySelector("#titulo");
 let botonesAgregar = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
-
-
-/* botonesCategorias.forEach(boton => boton.addEventListener("click", () => {
-    aside.classList.remove("aside-visible");
-})) */
 
 
 function cargarProductos(productosElegidos) {
@@ -104,7 +100,7 @@ function agregarAlCarrito(e) {
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
             background: "linear-gradient(to right, #80808e, #c8c8cc)",
-            
+
             borderRadius: "2rem",
             textTransform: "uppercase",
             fontSize: ".75rem"
