@@ -117,8 +117,7 @@ function eliminarDelCarrito(e) {
         contenedorCarritoAcciones.style.display = 'none';
         contenedorCarritoComprado.style.display = 'none';
 
-    } 
-              
+    }               
 
 }
 

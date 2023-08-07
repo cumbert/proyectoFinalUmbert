@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
 * {
   margin: 0;
@@ -54,15 +55,28 @@
   padding-right: 2rem;
   padding-left: 2rem;
   width: 22%;
+  position: absotule;
+  position: relative;
+  display: inline-block;
 }
 .header .login_buy img {
-  width: 1.8rem;
+  width: 3rem;
 }
-.header .login_buy .login p {
-  align-items: center;
+.header .login_buy #carrito-icon {
+  margin-top: 2.5rem; /* Ajusta la posición vertical del ícono */
 }
-.header .login_buy > div {
-  margin-right: 10px;
+.header .login_buy .numerito {
+  position: absolute;
+  top: 45px;
+  right: 125px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 14px;
 }
 
 .titulo {
@@ -129,11 +143,6 @@
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  /*   .carrito-comprado {
-        display: flex;
-        justify-content: center;
-
-    } */
 }
 .contenedor-carrito .carrito-vacio,
 .contenedor-carrito .carrito-comprado {

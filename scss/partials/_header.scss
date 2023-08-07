@@ -1,14 +1,14 @@
- .header {
+.header {
 
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin-inline: 10%; 
+    margin-inline: 10%;
 
 
     .logo {
 
-        padding-right: 2rem;        
+        padding-right: 2rem;
         padding-top: 2.0rem;
         width: 18%;
         justify-content: center;
@@ -19,24 +19,24 @@
     }
 
     .nav {
-       
+
         display: flex;
         justify-items: center;
-        align-items:  center;
+        align-items: center;
         text-align: center;
 
         ul {
             list-style-type: none;
             display: inline-block;
-            
+
             li {
-                display: inline; 
+                display: inline;
                 margin: 0 10px;
-    
+
                 .boton-menu {
                     background-color: transparent;
                     border: 0;
-                    cursor: pointer;                  
+                    cursor: pointer;
                     gap: 1rem;
                     font-weight: 600;
                     padding: 1rem;
@@ -47,48 +47,64 @@
                 .boton-menu.active {
                     background-color: black;
                     color: white;
-                   
-                    
+
+
                 }
-    
+
             }
-        }        
-
-        
-
-        
+        }
 
     }
 
-     .login_buy {
+    .login_buy {
 
-        display: flex;        
+        display: flex;
         align-items: center;
         padding-right: 2rem;
-        padding-left: 2rem;        
+        padding-left: 2rem;
         width: 22%;
-        
+        position: absotule;   
+        position: relative;
+        display: inline-block;    
+
 
         img {
-            width: 1.8rem;       
+            width: 3rem;
 
         }
 
-        .login {
-            
-
-            p{
-                align-items: center;    
-            }
-         
+        #carrito-icon {
+            margin-top: 2.5rem; /* Ajusta la posición vertical del ícono */
         }
+       
+
+        .numerito {
+            position: absolute;
+            top: 45px;
+            right: 125px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            line-height: 20px;
+            font-size: 14px;
+        }
+
+
+
     }
+
+
     
-     .login_buy > div {
-        margin-right: 10px; 
-      } 
+    
+
+    
+    
+
+ 
 
 
 
-
-} 
+}
