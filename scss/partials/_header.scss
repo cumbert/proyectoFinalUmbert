@@ -65,36 +65,60 @@
         width: 22%;
         position: absotule;   
         position: relative;
-        display: inline-block;    
+        display: inline-block;   
+        
+        .cart-container {
+            display: flex;
+            align-items: flex-start; /* Alinea elementos verticalmente en la parte superior */
 
+            #carrito-icon {
+                margin-top: 2.5rem; /* Ajusta la posición vertical del ícono */
+                width: 3rem;
+            }
 
-        img {
-            width: 3rem;
+            .numerito {
+                position: absolute;
+                top: 45px;
+                margin-left: 5px; /* Ajusta el espacio entre el ícono y el número */
+                right: 125px;
+                background-color: red;
+                color: white;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                line-height: 20px;
+                font-size: 14px;
+            }
 
+            
         }
 
-        #carrito-icon {
-            margin-top: 2.5rem; /* Ajusta la posición vertical del ícono */
-        }
+        
+
+    
+
+
+      
+
+      
        
 
-        .numerito {
-            position: absolute;
-            top: 45px;
-            right: 125px;
-            background-color: red;
-            color: white;
-            border-radius: 50%;
-            width: 20px;
-            height: 20px;
-            text-align: center;
-            line-height: 20px;
-            font-size: 14px;
-        }
+       
+
+
 
 
 
     }
+
+    
+    
+    
+    
+   
+    
+
 
 
     

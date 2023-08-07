@@ -59,15 +59,18 @@
   position: relative;
   display: inline-block;
 }
-.header .login_buy img {
+.header .login_buy .cart-container {
+  display: flex;
+  align-items: flex-start; /* Alinea elementos verticalmente en la parte superior */
+}
+.header .login_buy .cart-container #carrito-icon {
+  margin-top: 2.5rem; /* Ajusta la posición vertical del ícono */
   width: 3rem;
 }
-.header .login_buy #carrito-icon {
-  margin-top: 2.5rem; /* Ajusta la posición vertical del ícono */
-}
-.header .login_buy .numerito {
+.header .login_buy .cart-container .numerito {
   position: absolute;
   top: 45px;
+  margin-left: 5px; /* Ajusta el espacio entre el ícono y el número */
   right: 125px;
   background-color: red;
   color: white;
